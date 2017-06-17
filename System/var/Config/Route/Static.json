@@ -1,0 +1,10 @@
+[
+    {
+        "base" : "/static",
+        "rule" : {
+            "/" : "StaticFile.IndexController:Index",
+            "/copyright.html" : "StaticFile.IndexController:Copyright",
+            "/{path}" : "StaticFile.StaticController:Handle"
+        }
+    }
+]

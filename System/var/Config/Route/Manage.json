@@ -1,0 +1,23 @@
+[
+    {
+        "base" : "",
+        "rule" : {
+            "/" : "Manage.IndexController:Index"
+        }
+    },
+    {
+        "base" : "/login",
+        "rule" : {
+            "" : "Manage.UserController:Login",
+            "/" : "Manage.UserController:Login",
+            "/{Action}.do" : "Manage.UserController:Action"
+        }
+    },
+    {
+        "base" : "/manage",
+        "rule" : {
+            "/" : "Manage.MainController:Index",
+            "/{Action}.do" : "Manage.MainController:Action"
+        }
+    }
+]
